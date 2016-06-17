@@ -20,7 +20,6 @@ class AddressData
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-	private $parcelOrders;
 
     /**
      * @var string

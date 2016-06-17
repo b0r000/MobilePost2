@@ -12,6 +12,10 @@ app.config(['$routeProvider', function($routeProvider) {
         templateUrl: '/bundles/app/partials/postman-form.html',
         controller: 'CreatePostmanFormCtrl'
     }).
+	when('/postmanroad', {
+        templateUrl: '/bundles/app/partials/postman-roadlist.html',
+        controller: 'PostmanRoadListCtrl'
+    }).
     otherwise({
         templateUrl: '/bundles/app/partials/postman-list.html',
         controller: 'PostmanListCtrl'

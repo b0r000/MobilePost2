@@ -3,7 +3,6 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use AppBundle\Model\ParcelOrderInterface; 
 
 /**
  * ParcelOrder
@@ -11,7 +10,7 @@ use AppBundle\Model\ParcelOrderInterface;
  * @ORM\Table(name="parcel_order")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\ParcelOrderRepository")
  */
-class ParcelOrder implements ParcelOrderInterface
+class ParcelOrder
 {
     /**
       * @ORM\OneToOne(targetEntity="Parcel", inversedBy="parcelOrders")

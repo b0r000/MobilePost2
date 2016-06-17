@@ -23,19 +23,6 @@ class Postman extends BaseUser implements PostmanInterface
      */
     protected $id;
 
-	/**
-+     * @var string
-+     *
-+     * @ORM\Column(name="first_name", type="string", length=255)
-+     */
-+    private $first_name;
-+
-+    /**
-+     * @var string
-+     *
-+     * @ORM\Column(name="last_name", type="string", length=255)
-+     */
-+    private $last_name;
 
     /**
      * @var string
@@ -44,12 +31,6 @@ class Postman extends BaseUser implements PostmanInterface
      */
     private $phone;
 
-	 /**
-     * @var string
-     *
-     * @ORM\Column(name="email", type="string", length=255)
-     */
-    private $email;
 
     /**
      * @var string
@@ -68,55 +49,7 @@ class Postman extends BaseUser implements PostmanInterface
     {
         return $this->id;
     }
-	
-	/**
-     * Set firstName
-     *
-     * @param string $firstName
-     *
-     * @return Postman
-     */
-    public function setFirstName($firstName)
-    {
-        $this->first_name = $firstName;
 
-        return $this;
-    }
-
-    /**
-     * Get firstName
-     *
-     * @return string
-     */
-    public function getFirstName()
-    {
-        return $this->first_name;
-    }
-
-    /**
-     * Set lastName
-     *
-     * @param string $lastName
-     *
-     * @return Postman
-     */
-    public function setLastName($lastName)
-    {
-        $this->last_name = $lastName;
-
-        return $this;
-    }
-
-    /**
-     * Get lastName
-     *
-     * @return string
-     */
-    public function getLastName()
-    {
-        return $this->last_name;
-    }
-	
     /**
      * Set phone
      *
@@ -141,30 +74,6 @@ class Postman extends BaseUser implements PostmanInterface
         return $this->phone;
     }
 
-	/**
-     * Set email
-     *
-     * @param string $email
-     *
-     * @return Postman
-     */
-    public function setEmail($email)
-    {
-        $this->email = $email;
-
-        return $this;
-    }
-
-   /**
-    * Get email
-	 *
-     * @return string
-     */
-    public function getEmail()
-    {
-        return $this->email;
-    }
-	
     /**
      * Set city
      *

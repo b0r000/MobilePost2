@@ -10,3 +10,12 @@ postmanServices.factory('Postman', ['$resource',
             }
         });
     }]);
+	
+postmanServices.factory('PostmanRoad', ['$resource',
+    function ($resource) {
+        return $resource('http://localhost:8000/api/v1/postmanroad/:postmanId.json', {}, {
+            query: {
+                method: 'GET', isArray: true, headers: {'Accept': 'application/json'}
+            }
+        });
+    }]);
